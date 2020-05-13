@@ -1,0 +1,421 @@
+[
+   {
+    //Overall
+      "column0": 104537, //Rank
+      "column1": 1983, //Level
+      "column2": 122091452 //XP
+   },
+   {
+    //Attack
+      "column0": 169843,
+      "column1": 98,
+      "column2": 12088216
+   },
+   {
+    //Defence
+      "column0": 238958,
+      "column1": 90,
+      "column2": 5729042
+   },
+   {
+    //Strength
+      "column0": 124043,
+      "column1": 99,
+      "column2": 14266872
+   },
+   {
+    //Hitpoints
+      "column0": 166115,
+      "column1": 99,
+      "column2": 16383718
+   },
+   {
+    //Ranged
+      "column0": 293006,
+      "column1": 95,
+      "column2": 8909210
+   },
+   {
+    //Prayer
+      "column0": 180132,
+      "column1": 80,
+      "column2": 1986872
+   },
+   {
+    //Magic
+      "column0": 341346,
+      "column1": 92,
+      "column2": 6566224
+   },
+   {
+    //Cooking
+      "column0": 186549,
+      "column1": 95,
+      "column2": 8814355
+   },
+   {
+    //Woodcutting
+      "column0": 174069,
+      "column1": 85,
+      "column2": 3284293
+   },
+   {
+    //Fletching
+      "column0": 293390,
+      "column1": 82,
+      "column2": 2545366
+   },
+   {
+    //Fishing
+      "column0": 133567,
+      "column1": 88,
+      "column2": 4693904
+   },
+   {
+    //Firemaking
+      "column0": 528310,
+      "column1": 70,
+      "column2": 761251
+   },
+   {
+    //Crafting
+      "column0": 146737,
+      "column1": 82,
+      "column2": 2573703
+   },
+   {
+    //Smithing
+      "column0": 125232,
+      "column1": 83,
+      "column2": 2675320
+   },
+   {
+    //Mining
+      "column0": 139773,
+      "column1": 81,
+      "column2": 2379215
+   },
+   {
+    //Herblore
+      "column0": 114562,
+      "column1": 85,
+      "column2": 3258769
+   },
+   {
+    //Agility
+      "column0": 122855,
+      "column1": 80,
+      "column2": 2013008
+   },
+   {
+    //Thieving
+      "column0": 149582,
+      "column1": 80,
+      "column2": 1986269
+   },
+   {
+    //Slayer
+      "column0": 81401,
+      "column1": 96,
+      "column2": 9991196
+   },
+   {
+    //Farming
+      "column0": 237107,
+      "column1": 80,
+      "column2": 2047387
+   },
+   {
+    //Runecrafting
+      "column0": 35030,
+      "column1": 90,
+      "column2": 5692005
+   },
+   {
+    //Hunter
+      "column0": 342466,
+      "column1": 70,
+      "column2": 750620
+   },
+   {
+    //Construction
+      "column0": 153383,
+      "column1": 83,
+      "column2": 2694637
+   },
+   {
+    // ? ? ?
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Bounty Hunter - Hunter
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Bounty Hunter - Rogue
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Clue Scrolls (ALL)
+      "column0": 141272, //Rank
+      "column1": 162     //KC
+   },
+   {
+    //Beginner Clue Scrolls
+      "column0": -1,
+      "column1": -1
+   },
+   {
+     //Easy Clue Scrolls
+      "column0": 321178,
+      "column1": 7
+   },
+   {
+     //Medium Clue scrolls
+      "column0": 247016,
+      "column1": 17
+   },
+   {
+     //Hard Clue Scrolls
+      "column0": 88815,
+      "column1": 119
+   },
+   {
+     //Elite Clue Scrolls
+      "column0": 104545,
+      "column1": 13
+   },
+   {
+     //Master Clue scrolls
+      "column0": 68583,
+      "column1": 6
+   },
+   {
+     //LMS Rank
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Abyssal Sire
+      "column0": 32861,
+      "column1": 251
+   },
+   {
+    //Alchemical Hydra
+      "column0": 53717,
+      "column1": 135
+   },
+   {
+    //Barrows Chest
+      "column0": 279803,
+      "column1": 51
+   },
+   {
+    //Bryophta
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Callisto
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Cerberus
+      "column0": 56595,
+      "column1": 299
+   },
+   {
+    //COX
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //COX - Challenge mode
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Chaos Elemental
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Chaos Fanatic
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Sara
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Corp
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Crazy Archeologist
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Prime
+      "column0": 80727,
+      "column1": 134
+   },
+   {
+    //Rex
+      "column0": 76878,
+      "column1": 238
+   },
+   {
+    //Supreme
+      "column0": 75454,
+      "column1": 154
+   },
+   {
+    //Deranged Archeologist
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Graardor
+      "column0": 58430,
+      "column1": 225
+   },
+   {
+    //Mole
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Grotesque Gaurdians
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Hespori
+      "column0": 129240,
+      "column1": 12
+   },
+   {
+    //KQ
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //KBD
+      "column0": 69897,
+      "column1": 225
+   },
+   {
+    //Kraken
+      "column0": 26697,
+      "column1": 2527
+   },
+   {
+    //Kree'Arra
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Zammy
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Mimic
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Nightmare
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Obor
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Sarachnis
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Scorpia
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Skotizo
+      "column0": 35534,
+      "column1": 36
+   },
+   {
+    //Gauntlet
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Gauntlet (Corrupted)
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //ToB
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Thermy
+      "column0": 50834,
+      "column1": 317
+   },
+   {
+    //Zuk
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Jad
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Venenatis
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Vet'ion
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Vorkath
+      "column0": 103634,
+      "column1": 208
+   },
+   {
+    //Wintertodt
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Zalcano
+      "column0": -1,
+      "column1": -1
+   },
+   {
+    //Zulrah
+      "column0": -1,
+      "column1": -1
+   }
+]
