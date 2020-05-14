@@ -8,64 +8,82 @@
 </head>
 
 <body>
-        <heading>
-            <div class="row">
-                <div class="col text-center header">
-                    <h1>NezzyHelm.io</h1>
-                </div>
+    <heading>
+        <div class="row">
+            <div class="col text-center header">
+                <h1>NezzyHelm.io</h1>
             </div>
-            <div class="row">
-                <div class="col">
-                    <h4 class="float-right">Player Name</h4>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control mb-2 text-center">
-                </div>
-                <div class="col">
-                    <a href="#" class="btn btn-dark">Lookup</a>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h5 class="float-right">Player Name</h5>
             </div>
-        </heading>
+            <div class="col">
+                <input type="text" class="form-control mb-2 text-center">
+            </div>
+            <div class="col">
+                <a href="#" class="btn btn-dark">Lookup</a>
+            </div>
+        </div>
+    </heading>
 
-        <div class="row no-gutters">
-            <div class="col">
-                <table class="table table-dark table-bordered table-sm">
-                    <thead class="bg-red text-center">
-                        <tr>
-                            <th>Skill</th>
-                            <th scope="col">Level</th>
-                            <th scope="col">XP</th>
-                            <th scope="col">Rank</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-center">
-                        <tr id="attack"></tr>
-                        <tr id="defence"></tr>
-                        <tr id="strength"></tr>
-                        <tr id="hitpoints"></tr>
-                        <tr id="ranged"></tr>
-                        <tr id="prayer"></tr>
-                        <tr id="magic"></tr>
-                        <tr id="cooking"></tr>
-                        <tr id="woodcutting"></tr>
-                        <tr id="fletching"></tr>
-                        <tr id="fishing"></tr>
-                        <tr id="firemaking"></tr>
-                        <tr id="crafting"></tr>
-                        <tr id="smithing"></tr>
-                        <tr id="mining"></tr>
-                        <tr id="herblore"></tr>
-                        <tr id="agility"></tr>
-                        <tr id="thieving"></tr>
-                        <tr id="slayer"></tr>
-                        <tr id="farming"></tr>
-                        <tr id="runecrafting"></tr>
-                        <tr id="hunter"></tr>
-                        <tr id="construction"></tr>
-                    </tbody>
-                </table>
+    <div class="row no-gutters">
+        <div class="col">
+            <table class="table table-dark table-bordered table-sm">
+                <thead class="bg-red text-center">
+                    <tr>
+                        <th>Skill</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">XP</th>
+                        <th scope="col">Rank</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr id="attack"></tr>
+                    <tr id="defence"></tr>
+                    <tr id="strength"></tr>
+                    <tr id="hitpoints"></tr>
+                    <tr id="ranged"></tr>
+                    <tr id="prayer"></tr>
+                    <tr id="magic"></tr>
+                    <tr id="cooking"></tr>
+                    <tr id="woodcutting"></tr>
+                    <tr id="fletching"></tr>
+                    <tr id="fishing"></tr>
+                    <tr id="firemaking"></tr>
+                    <tr id="crafting"></tr>
+                    <tr id="smithing"></tr>
+                    <tr id="mining"></tr>
+                    <tr id="herblore"></tr>
+                    <tr id="agility"></tr>
+                    <tr id="thieving"></tr>
+                    <tr id="slayer"></tr>
+                    <tr id="farming"></tr>
+                    <tr id="runecrafting"></tr>
+                    <tr id="hunter"></tr>
+                    <tr id="construction"></tr>
+                    <tr id="total"></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="float-right text-white">Tutorial Island</p>
+        </div>
+        <div class="col" id="0-max-container">
+            <div class="bar bg-white">
+                <div class="barFiller text-center"></div>
             </div>
-            <div class="col">
+            <div class="text-center">
+                <p class="text-white">Level-Based</p>
             </div>
-        <script src="app.js"></script>
+        </div>
+        <div class="col">
+            <p class="text-white">Max Level</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body></html>

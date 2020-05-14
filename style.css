@@ -17,6 +17,9 @@ thead{
 tbody{
     color: black;
 }
+tbody th{
+    color: white;
+}
 tbody td{
     padding: 10px;
 }
@@ -27,76 +30,83 @@ tbody td{
     background-color: rgb(205,205,205);
 }
 .tc-r{
-    background-color: rgb(215,215,215);
+    background-color: rgb(185,185,185);
 }
 
+.barFiller{
+    background-color: aquamarine;
+    margin: 0;
+}
 /*Separate skillheader bg-colors*/
 #attack th{
-    background-color: red;
+    background: linear-gradient(90deg, rgba(152, 0, 52, 1) 0%, rgba(152, 0, 52, 0) 25%);
 }
 #defence th{
-    background-color: lightblue;
+    background: linear-gradient(90deg, rgba(6, 105, 178, 1) 0%, rgba(6, 105, 178, 0) 25%);
 }
 #strength th{
-    background-color: green;
+    background: linear-gradient(90deg, rgba(0, 159, 60, 1) 0%, rgba(0, 159, 60, 0) 25%);
 }
 #hitpoints th{
-    background-color: red;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 25%);
 }
 #ranged th{
-    background-color: greenyellow;
+    background: linear-gradient(90deg, rgba(124, 198, 35, 1) 0%, rgba(124, 198, 35, 0) 25%);
 }
 #prayer th{
-    background-color: white;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 25%);
 }
 #magic th{
-    background-color: lightgray;
+    background: linear-gradient(90deg, rgba(205, 205, 205, 1) 0%, rgba(205, 205, 205, 0) 25%);
 }
 #cooking th{
-    background-color: purple;
+    background: linear-gradient(90deg, rgba(106, 80, 155, 1) 0%, rgba(106, 80, 155, 0) 25%);
 }
 #woodcutting th{
-    background-color: rgb(77, 21, 21);
+    background: linear-gradient(90deg, rgba(200, 164, 109, 1) 0%, rgba(200, 164, 109, 0) 25%);
 }
 #fletching th{
-    background-color: darkturquoise;
+    background: linear-gradient(90deg, rgba(0, 109, 104, 1) 0%, rgba(0, 109, 104, 0) 25%);
 }
 #fishing th{
-    background-color: lightblue;
+    background: linear-gradient(90deg, rgba(141, 207, 244, 1) 0%, rgba(141, 207, 244, 0) 25%);
 }
 #firemaking th{
-    background-color: orange;
+    background: linear-gradient(90deg, rgba(239, 156, 0, 1) 0%, rgba(239, 156, 0, 0) 25%);
 }
 #crafting th{
-    background-color: rgb(179, 65, 20);
+    background: linear-gradient(90deg, rgba(118, 100, 84, 1) 0%, rgba(118, 100, 84, 0) 25%);
 }
 #smithing th{
-    background-color: darkkhaki;
+    background: linear-gradient(90deg, rgba(72, 87, 68, 1) 0%, rgba(72, 87, 68, 0) 25%);
 }
 #mining th{
-    background-color: darkslategray;
+    background: linear-gradient(90deg, rgba(87, 83, 68, 1) 0%, rgba(87, 83, 68, 0) 25%);
 }
 #herblore th{
-    background-color: rgb(53, 201, 20);
+    background: linear-gradient(90deg, rgba(0, 159, 60, 1) 0%, rgba(0, 159, 60, 0) 25%);
 }
 #agility th{
-    background-color: darkblue;
+    background: linear-gradient(90deg, rgba(29, 42, 99, 1) 0%, rgba(29, 42, 99, 0) 25%);
 }
 #thieving th{
-    background-color: rgb(112, 16, 30);
+    background: linear-gradient(90deg, rgba(142, 86, 155, 1) 0%, rgba(142, 86, 155, 0) 25%);
 }
 #slayer th{
-    background-color: white;
+    background: linear-gradient(90deg, rgba(48, 48, 48, 1) 0%, rgba(48, 48, 48, 0) 25%);
 }
 #farming th{
-    background-color: rgba(19, 168, 38, 0.3);
+    background: linear-gradient(90deg, rgba(0, 117, 32, 1) 0%, rgba(0, 117, 32, 0) 25%);
 }
 #runecrafting th{
-    background-color: rgb(224, 224, 224);
+    background: linear-gradient(90deg, rgba(230, 230, 230, 1) 0%, rgba(230, 230, 230, 0) 25%);
 }
 #hunter th{
-    background-color: rgb(135, 135, 135);
+    background: linear-gradient(90deg, rgba(158, 139, 117, 1) 0%, rgba(158, 139, 117, 0) 25%);
 }
 #construction th{
-    background-color: rgb(245, 214, 191);
+    background: linear-gradient(90deg, rgba(203, 185, 157, 1) 0%, rgba(203, 185, 157, 0) 25%);
+}
+#total th{
+    background-color: rgb(50, 109, 168);
 }
