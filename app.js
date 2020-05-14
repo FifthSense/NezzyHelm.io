@@ -1,4 +1,4 @@
-const csvtoConvert = "1437256,829,17151072 -1,40,40528 -1,38,31249 -1,46,72821 -1,44,57598 -1,1,28 -1,31,15194 1439205,59,264675 1715314,44,58717 285436,80,1986201 654694,69,676086 627719,69,673510 74730,99,13052174 1893633,33,19986 -1,1,31 -1,15,2530 1504507,16,2965 988104,53,145579 1129509,41,41198 -1,1,0 1097366,18,3872 1341448,10,1310 -1,1,0 1194455,20,4820 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 1035153,1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 71414,508 -1,-1 -1,-1";
+const csvtoConvert = "104613,1983,122091452 169935,98,12088216 239091,90,5729042 124101,99,14266872 166221,99,16383718 293188,95,8909210 180229,80,1986872 341539,92,6566224 186638,95,8814355 174167,85,3284293 293510,82,2545366 133654,88,4693904 528597,70,761251 146822,82,2573703 125314,83,2675320 139884,81,2379215 114652,85,3258769 122942,80,2013008 149688,80,1986269 81447,96,9991196 237274,80,2047387 35050,90,5692005 342721,70,750620 153507,83,2694637 -1,-1 -1,-1 -1,-1 141325,162 -1,-1 321261,7 247112,17 88844,119 104593,13 68615,6 -1,-1 32895,251 53772,135 280054,51 -1,-1 -1,-1 56645,299 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 80785,134 76940,238 75507,154 -1,-1 58469,225 -1,-1 -1,-1 129411,12 -1,-1 69935,225 26715,2527 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 35564,36 -1,-1 -1,-1 -1,-1 50868,317 -1,-1 -1,-1 -1,-1 -1,-1 103754,208 -1,-1 -1,-1 -1,-1";
 
 function conversion (){
     const preConversion = csvtoConvert.split(" ");
@@ -44,141 +44,141 @@ function decimalSeperation(num) {
   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
 }
 
-document.getElementById('attack').innerHTML = `
+attack.innerHTML = `
             <th>Attack</th>
-            <td>${userAttack[level]}</td>
-            <td>${decimalSeperation(userAttack[xp])}</td>
-            <td>${decimalSeperation(userAttack[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userAttack[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userAttack[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userAttack[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('defence').innerHTML = `
+defence.innerHTML = `
             <th>Defence</th>
-            <td>${userDefence[level]}</td>
-            <td>${decimalSeperation(userDefence[xp])}</td>
-            <td>${decimalSeperation(userDefence[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userDefence[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userDefence[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userDefence[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('strength').innerHTML = `
+strength.innerHTML = `
             <th>Strength</th>
-            <td>${userStrength[level]}</td>
-            <td>${decimalSeperation(userStrength[xp])}</td>
-            <td>${decimalSeperation(userStrength[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userStrength[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userStrength[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userStrength[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('hitpoints').innerHTML = `
+hitpoints.innerHTML = `
             <th>Hitpoints</th>
-            <td>${userHitpoints[level]}</td>
-            <td>${decimalSeperation(userHitpoints[xp])}</td>
-            <td>${decimalSeperation(userHitpoints[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userHitpoints[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userHitpoints[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userHitpoints[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('ranged').innerHTML = `
+ranged.innerHTML = `
             <th>Ranged</th>
-            <td>${userRanged[level]}</td>
-            <td>${decimalSeperation(userRanged[xp])}</td>
-            <td>${decimalSeperation(userRanged[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userRanged[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userRanged[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userRanged[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('prayer').innerHTML = `
+prayer.innerHTML = `
             <th>Prayer</th>
-            <td>${userPrayer[level]}</td>
-            <td>${decimalSeperation(userPrayer[xp])}</td>
-            <td>${decimalSeperation(userPrayer[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userPrayer[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userPrayer[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userPrayer[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('magic').innerHTML = `
+magic.innerHTML = `
             <th>Magic</th>
-            <td>${userMagic[level]}</td>
-            <td>${decimalSeperation(userMagic[xp])}</td>
-            <td>${decimalSeperation(userMagic[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userMagic[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userMagic[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userMagic[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('cooking').innerHTML = `
+cooking.innerHTML = `
             <th>Cooking</th>
-            <td>${userCooking[level]}</td>
-            <td>${decimalSeperation(userCooking[xp])}</td>
-            <td>${decimalSeperation(userCooking[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userCooking[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userCooking[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userCooking[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('woodcutting').innerHTML = `
+woodcutting.innerHTML = `
             <th>Woodcutting</th>
-            <td>${userWoodcutting[level]}</td>
-            <td>${decimalSeperation(userWoodcutting[xp])}</td>
-            <td>${decimalSeperation(userWoodcutting[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userWoodcutting[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userWoodcutting[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userWoodcutting[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('fletching').innerHTML = `
+fletching.innerHTML = `
             <th>Fletching</th>
-            <td>${userFletching[level]}</td>
-            <td>${decimalSeperation(userFletching[xp])}</td>
-            <td>${decimalSeperation(userFletching[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userFletching[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userFletching[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userFletching[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('fishing').innerHTML = `
+fishing.innerHTML = `
             <th>Fishing</th>
-            <td>${userFishing[level]}</td>
-            <td>${decimalSeperation(userFishing[xp])}</td>
-            <td>${decimalSeperation(userFishing[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userFishing[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userFishing[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userFishing[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('firemaking').innerHTML = `
+firemaking.innerHTML = `
             <th>Firemaking</th>
-            <td>${userFiremaking[level]}</td>
-            <td>${decimalSeperation(userFiremaking[xp])}</td>
-            <td>${decimalSeperation(userFiremaking[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userFiremaking[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userFiremaking[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userFiremaking[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
 document.getElementById('crafting').innerHTML = `
             <th>Crafting</th>
-            <td>${userCrafting[level]}</td>
-            <td>${decimalSeperation(userCrafting[xp])}</td>
-            <td>${decimalSeperation(userCrafting[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userCrafting[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userCrafting[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userCrafting[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('smithing').innerHTML = `
+smithing.innerHTML = `
             <th>Smithing</th>
-            <td>${userSmithing[level]}</td>
-            <td>${decimalSeperation(userSmithing[xp])}</td>
-            <td>${decimalSeperation(userSmithing[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userSmithing[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userSmithing[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userSmithing[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('mining').innerHTML = `
+mining.innerHTML = `
             <th>Mining</th>
-            <td>${userMining[level]}</td>
-            <td>${decimalSeperation(userMining[xp])}</td>
-            <td>${decimalSeperation(userMining[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userMining[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userMining[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userMining[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('herblore').innerHTML = `
+herblore.innerHTML = `
             <th>Herblore</th>
-            <td>${userHerblore[level]}</td>
-            <td>${decimalSeperation(userHerblore[xp])}</td>
-            <td>${decimalSeperation(userHerblore[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userHerblore[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userHerblore[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userHerblore[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('agility').innerHTML = `
+agility.innerHTML = `
             <th>Agility</th>
-            <td>${userAgility[level]}</td>
-            <td>${decimalSeperation(userAgility[xp])}</td>
-            <td>${decimalSeperation(userAgility[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userAgility[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userAgility[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userAgility[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('thieving').innerHTML = `
+thieving.innerHTML = `
             <th>Thieving</th>
-            <td>${userThieving[level]}</td>
-            <td>${decimalSeperation(userThieving[xp])}</td>
-            <td>${decimalSeperation(userThieving[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userThieving[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userThieving[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userThieving[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('slayer').innerHTML = `
+slayer.innerHTML = `
             <th>Slayer</th>
-            <td>${userSlayer[level]}</td>
-            <td>${decimalSeperation(userSlayer[xp])}</td>
-            <td>${decimalSeperation(userSlayer[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userSlayer[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userSlayer[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userSlayer[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('farming').innerHTML = `
+farming.innerHTML = `
             <th>Farming</th>
-            <td>${userFarming[level]}</td>
-            <td>${decimalSeperation(userFarming[xp])}</td>
-            <td>${decimalSeperation(userFarming[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userFarming[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userFarming[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userFarming[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('runecrafting').innerHTML = `
+runecrafting.innerHTML = `
             <th>Runecrafting</th>
-            <td>${userRunecrafting[level]}</td>
-            <td>${decimalSeperation(userRunecrafting[xp])}</td>
-            <td>${decimalSeperation(userRunecrafting[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userRunecrafting[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userRunecrafting[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userRunecrafting[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('hunter').innerHTML = `
+hunter.innerHTML = `
             <th>Hunter</th>
-            <td>${userHunter[level]}</td>
-            <td>${decimalSeperation(userHunter[xp])}</td>
-            <td>${decimalSeperation(userHunter[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userHunter[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userHunter[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userHunter[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;
-document.getElementById('construction').innerHTML = `
+construction.innerHTML = `
             <th>Construction</th>
-            <td>${userConstruction[level]}</td>
-            <td>${decimalSeperation(userConstruction[xp])}</td>
-            <td>${decimalSeperation(userConstruction[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
+            <td class="tc-level">${userConstruction[level]}</td>
+            <td class="tc-xp">${decimalSeperation(userConstruction[xp])}</td>
+            <td class="tc-r">${decimalSeperation(userConstruction[rank].replace(/-1/, "<span class='text-danger'>Rank too low</span>"))}</td>
 `;

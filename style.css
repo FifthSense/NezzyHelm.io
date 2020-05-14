@@ -1,0 +1,102 @@
+body{
+    background-color: #343a40;
+}
+heading .col{
+    background-color: lightslategray;
+    box-sizing: border-box;
+}
+h1{
+    color: black;
+}
+table{
+    margin: 0;
+}
+thead{
+    background-color: black;
+}
+tbody{
+    color: black;
+}
+tbody td{
+    padding: 10px;
+}
+.tc-level{
+    background-color: rgb(185,185,185);
+}
+.tc-xp{
+    background-color: rgb(205,205,205);
+}
+.tc-r{
+    background-color: rgb(215,215,215);
+}
+
+/*Separate skillheader bg-colors*/
+#attack th{
+    background-color: red;
+}
+#defence th{
+    background-color: lightblue;
+}
+#strength th{
+    background-color: green;
+}
+#hitpoints th{
+    background-color: red;
+}
+#ranged th{
+    background-color: greenyellow;
+}
+#prayer th{
+    background-color: white;
+}
+#magic th{
+    background-color: lightgray;
+}
+#cooking th{
+    background-color: purple;
+}
+#woodcutting th{
+    background-color: rgb(77, 21, 21);
+}
+#fletching th{
+    background-color: darkturquoise;
+}
+#fishing th{
+    background-color: lightblue;
+}
+#firemaking th{
+    background-color: orange;
+}
+#crafting th{
+    background-color: rgb(179, 65, 20);
+}
+#smithing th{
+    background-color: darkkhaki;
+}
+#mining th{
+    background-color: darkslategray;
+}
+#herblore th{
+    background-color: rgb(53, 201, 20);
+}
+#agility th{
+    background-color: darkblue;
+}
+#thieving th{
+    background-color: rgb(112, 16, 30);
+}
+#slayer th{
+    background-color: white;
+}
+#farming th{
+    background-color: rgba(19, 168, 38, 0.3);
+}
+#runecrafting th{
+    background-color: rgb(224, 224, 224);
+}
+#hunter th{
+    background-color: rgb(135, 135, 135);
+}
+#construction th{
+    background-color: rgb(245, 214, 191);
+}
