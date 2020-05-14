@@ -32,7 +32,9 @@ tbody td{
 .tc-r{
     background-color: rgb(185,185,185);
 }
-
+.bar{
+    margin: 0 3% 0 3%;
+}
 .barFiller{
     background-color: aquamarine;
     margin: 0;
