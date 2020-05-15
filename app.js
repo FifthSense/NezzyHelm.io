@@ -9,88 +9,11 @@ function conversion (){
     return finalParse;
 }
 //SKILLS
-const userTotal = conversion()[0];
-const userAttack = conversion()[1];
-const userDefence = conversion()[2];
-const userStrength = conversion()[3];
-const userHitpoints = conversion()[4];
-const userRanged = conversion()[5];
-const userPrayer = conversion()[6];
-const userMagic = conversion()[7];
-const userCooking = conversion()[8];
-const userWoodcutting = conversion()[9];
-const userFletching = conversion()[10];
-const userFishing = conversion()[11];
-const userFiremaking = conversion()[12];
-const userCrafting = conversion()[13];
-const userSmithing = conversion()[14];
-const userMining = conversion()[15];
-const userHerblore = conversion()[16];
-const userAgility = conversion()[17];
-const userThieving = conversion()[18];
-const userSlayer = conversion()[19];
-const userFarming = conversion()[20];
-const userRunecrafting = conversion()[21];
-const userHunter = conversion()[22];
-const userConstruction = conversion()[23];
-
-const rank = 0;
-const level = 1;
-const xp = 2;
+const userTotal=conversion()[0],userAttack=conversion()[1],userDefence=conversion()[2],userStrength=conversion()[3],userHitpoints=conversion()[4],userRanged=conversion()[5],userPrayer=conversion()[6],userMagic=conversion()[7],userCooking=conversion()[8],userWoodcutting=conversion()[9],userFletching=conversion()[10],userFishing=conversion()[11],userFiremaking=conversion()[12],userCrafting=conversion()[13],userSmithing=conversion()[14],userMining=conversion()[15],userHerblore=conversion()[16],userAgility=conversion()[17],userThieving=conversion()[18],userSlayer=conversion()[19],userFarming=conversion()[20],userRunecrafting=conversion()[21],userHunter=conversion()[22],userConstruction=conversion()[23];
+const rank=0,level=1,xp=2;
 
 //KC's
-const userAllClues = conversion()[27];
-const userBeginnerClues = conversion()[28];
-const userEasyClues = conversion()[29];
-const userMediumClues = conversion()[30];
-const userHardClues = conversion()[31];
-const userEliteClues = conversion()[32];
-const userMasterClues = conversion()[33];
-const userAbyssalSire = conversion()[35];
-const userAlchemicalHydra = conversion()[36];
-const userBarrowsChest = conversion()[37];
-const userBryophta = conversion()[38];
-const userCallisto = conversion()[39];
-const userCerberus = conversion()[40];
-const userChambersOfXeric = conversion()[41];
-const userChambersOfXericCM = conversion()[42];
-const userChaosElemental = conversion()[43];
-const userChaosFanatic = conversion()[44];
-const userCommanderZyliana = conversion()[45];
-const userCorporealBeast = conversion()[46];
-const userCrazyArcheologist = conversion()[47];
-const userDagannothPrime = conversion()[48];
-const userDagannothRex = conversion()[49];
-const userDagannothSupreme = conversion()[50];
-const userDerangedArcheologist = conversion()[51];
-const userGeneralGraardor = conversion()[52];
-const userGiantMole = conversion()[53];
-const userGrotesqueGaurdians = conversion()[54];
-const userHespori = conversion()[55];
-const userKalphiteQueen = conversion()[56];
-const userKingBlackDragon = conversion()[57];
-const userKraken = conversion()[58];
-const userKreeArra = conversion()[59];
-const userKrilTsutsaroth = conversion()[60];
-const userMimic = conversion()[61];
-const userNightmare = conversion()[62];
-const userObor = conversion()[63];
-const userSarachnis = conversion()[64];
-const userScorpia = conversion()[65];
-const userSkotizo = conversion()[66];
-const userGauntlet = conversion()[67];
-const userCorruptedGauntlet = conversion()[68];
-const userTheatreOfBlood = conversion()[69];
-const userThermonuclearSmokeDevil = conversion()[70];
-const userZuk = conversion()[71];
-const userJad = conversion()[72];
-const userVenenatis = conversion()[73];
-const userVetIon = conversion()[74];
-const userVorkath = conversion()[75];
-const userWintertodt = conversion()[76];
-const userZalcano = conversion()[77];
-const userZulrah = conversion()[78];
-
+const userAllClues=conversion()[27],userBeginnerClues=conversion()[28],userEasyClues=conversion()[29],userMediumClues=conversion()[30],userHardClues=conversion()[31],userEliteClues=conversion()[32],userMasterClues=conversion()[33],userAbyssalSire=conversion()[35],userAlchemicalHydra=conversion()[36],userBarrowsChest=conversion()[37],userBryophta=conversion()[38],userCallisto=conversion()[39],userCerberus=conversion()[40],userChambersOfXeric=conversion()[41],userChambersOfXericCM=conversion()[42],userChaosElemental=conversion()[43],userChaosFanatic=conversion()[44],userCommanderZyliana=conversion()[45],userCorporealBeast=conversion()[46],userCrazyArcheologist=conversion()[47],userDagannothPrime=conversion()[48],userDagannothRex=conversion()[49],userDagannothSupreme=conversion()[50],userDerangedArcheologist=conversion()[51],userGeneralGraardor=conversion()[52],userGiantMole=conversion()[53],userGrotesqueGaurdians=conversion()[54],userHespori=conversion()[55],userKalphiteQueen=conversion()[56],userKingBlackDragon=conversion()[57],userKraken=conversion()[58],userKreeArra=conversion()[59],userKrilTsutsaroth=conversion()[60],userMimic=conversion()[61],userNightmare=conversion()[62],userObor=conversion()[63],userSarachnis=conversion()[64],userScorpia=conversion()[65],userSkotizo=conversion()[66],userGauntlet=conversion()[67],userCorruptedGauntlet=conversion()[68],userTheatreOfBlood=conversion()[69],userThermonuclearSmokeDevil=conversion()[70],userZuk=conversion()[71],userJad=conversion()[72],userVenenatis=conversion()[73],userVetIon=conversion()[74],userVorkath=conversion()[75],userWintertodt=conversion()[76],userZalcano=conversion()[77],userZulrah=conversion()[78];
 
 function percToMax () {
     let percentage = ((userTotal[1] / 2277)*100).toFixed(2);
@@ -102,8 +25,9 @@ function decimalSeperation(num) {
 }
 //Insert skills into table
 insertSkills();
-
-//Insert activity kc into table
+//Tutorial Island to Max Percentage Based Tracker
+t2max();
+//Insert activity kc into table --> Clean up
 allClues.innerHTML = `
             <th><img src="img/skillIcons/attack.png" class="float-left">All Clue Scrolls</th>
             <td class="tc-level">${userAllClues[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
@@ -359,7 +283,4 @@ zulrah.innerHTML = `
             <td class="tc-level">${userZulrah[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
             <td class="tc-xp">${decimalSeperation(userZulrah[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
 `;
-//Tut Island to Max Percentage tracker
-const barFiller = document.querySelector('.barFiller');
-barFiller.style.width = percToMax();
-barFiller.textContent = percToMax();
+

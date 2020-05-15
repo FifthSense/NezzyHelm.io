@@ -368,7 +368,7 @@ function insertSkills() {
 `;
     }
     //Total
-        if (parseInt(userConstruction[level]) === 2277) {
+    if (parseInt(userConstruction[level]) === 2277) {
         total.innerHTML = `
             <th><img src="img/skillIcons/overall.png" class="float-left">Total</th>
             <td class="tc-level max"><b>${decimalSeperation(userTotal[level])}</b></td>
@@ -383,4 +383,11 @@ function insertSkills() {
             <td class="tc-r">${decimalSeperation(userTotal[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
 `;
     }
+}
+
+//Tut Island to Max Percentage tracker
+function t2max() {
+    const barFiller = document.querySelector('.barFiller');
+    barFiller.style.width = percToMax();
+    barFiller.textContent = percToMax();
 }
