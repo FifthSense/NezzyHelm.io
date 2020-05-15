@@ -10,6 +10,7 @@ h1{
 }
 table{
     margin: 0;
+    border: solid 2px black;
 }
 thead{
     background-color: black;
@@ -31,6 +32,16 @@ tbody td{
 }
 .tc-r{
     background-color: rgb(185,185,185);
+}
+.scrollable{
+    position: relative;
+    height: 485px;
+    overflow: auto;
+    display: block;
+    border: solid 2px black;
+}
+.max{
+    color: green;
 }
 .bar{
     margin: 0 3% 0 3%;

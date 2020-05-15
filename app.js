@@ -1,4 +1,4 @@
-const csvtoConvert = "21430,2201,370952527 28294,99,21060666 28334,99,17954769 6031,99,43739040 8423,99,51989230 9451,99,51046502 7949,99,13198530 9865,99,24531572 49719,99,13437849 64916,97,11087760 72173,99,13045235 61900,96,9969761 76925,99,13050764 27022,99,13188549 38831,91,6222121 65490,88,4592450 20538,99,13070859 29549,91,6163208 63205,91,6199304 72691,97,10744321 70535,99,13050785 40602,88,4719961 78752,85,3506557 37328,90,5382734 -1,-1 -1,-1 206899,2 318908,52 -1,-1 -1,-1 -1,-1 447548,5 183874,4 12607,43 38023,509 -1,-1 37487,365 81680,274 -1,-1 -1,-1 32061,667 3475,1274 2467,41 -1,-1 -1,-1 28013,210 23891,133 -1,-1 26133,531 35713,518 28879,494 -1,-1 59692,219 19525,462 18027,221 38750,47 14763,297 64044,245 93905,956 13075,377 -1,-1 -1,-1 3092,230 -1,-1 -1,-1 3519,430 61770,26 5072,52 5431,17 3034,629 44295,394 1969,3 25986,13 12107,300 -1,-1 42568,607 84685,442 -1,-1 49537,1041";
+const csvtoConvert = "104783,1983,122091452 170118,98,12088216 239335,90,5729042 124229,99,14266872 166426,99,16383718 293545,95,8909210 180484,80,1986872 341874,92,6566224 186833,95,8814355 174348,85,3284293 293676,82,2545366 133847,88,4693904 529108,70,761251 147032,82,2573703 125497,83,2675320 139880,81,2379215 114817,85,3258769 122986,80,2013008 149903,80,1986269 81539,96,9991196 237628,80,2047387 35124,90,5692005 343100,70,750620 153774,83,2694637 -1,-1 -1,-1 -1,-1 141500,162 -1,-1 321462,7 247324,17 88916,119 104701,13 68679,6 -1,-1 32968,251 53882,135 280568,51 -1,-1 -1,-1 56757,299 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 80922,134 77071,238 75648,154 -1,-1 58547,225 -1,-1 -1,-1 129807,12 -1,-1 70040,225 26776,2527 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 -1,-1 35627,36 -1,-1 -1,-1 -1,-1 50958,317 -1,-1 -1,-1 -1,-1 -1,-1 104024,208 -1,-1 -1,-1 -1,-1";
 
 function conversion (){
     const preConversion = csvtoConvert.split(" ");
@@ -8,7 +8,6 @@ function conversion (){
     }
     return finalParse;
 }
-
 //SKILLS
 const userTotal = conversion()[0];
 const userAttack = conversion()[1];
@@ -101,153 +100,10 @@ function percToMax () {
 function decimalSeperation(num) {
   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
 }
-//Insert Skills into Table
-attack.innerHTML = `
-            <th><img src="img/skillIcons/attack.png" class="float-left">Attack</th>
-            <td class="tc-level">${userAttack[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userAttack[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userAttack[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-defence.innerHTML = `
-            <th><img src="img/skillIcons/defence.png" class="float-left">Defence</th>
-            <td class="tc-level">${userDefence[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userDefence[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userDefence[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-strength.innerHTML = `
-            <th><img src="img/skillIcons/strength.png" class="float-left">Strength</th>
-            <td class="tc-level">${userStrength[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userStrength[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userStrength[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-hitpoints.innerHTML = `
-            <th><img src="img/skillIcons/hitpoints.png" class="float-left">Hitpoints</th>
-            <td class="tc-level">${userHitpoints[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userHitpoints[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userHitpoints[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-ranged.innerHTML = `
-            <th><img src="img/skillIcons/ranged.png" class="float-left">Ranged</th>
-            <td class="tc-level">${userRanged[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userRanged[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userRanged[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-prayer.innerHTML = `
-            <th><img src="img/skillIcons/prayer.png" class="float-left">Prayer</th>
-            <td class="tc-level">${userPrayer[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userPrayer[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userPrayer[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-magic.innerHTML = `
-            <th><img src="img/skillIcons/magic.png" class="float-left">Magic</th>
-            <td class="tc-level">${userMagic[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userMagic[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userMagic[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-cooking.innerHTML = `
-            <th><img src="img/skillIcons/cooking.png" class="float-left">Cooking</th>
-            <td class="tc-level">${userCooking[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userCooking[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userCooking[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-woodcutting.innerHTML = `
-            <th><img src="img/skillIcons/woodcutting.png" class="float-left">Woodcutting</th>
-            <td class="tc-level">${userWoodcutting[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userWoodcutting[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userWoodcutting[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-fletching.innerHTML = `
-            <th><img src="img/skillIcons/fletching.png" class="float-left">Fletching</th>
-            <td class="tc-level">${userFletching[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userFletching[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userFletching[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-fishing.innerHTML = `
-            <th><img src="img/skillIcons/fishing.png" class="float-left">Fishing</th>
-            <td class="tc-level">${userFishing[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userFishing[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userFishing[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-firemaking.innerHTML = `
-            <th><img src="img/skillIcons/firemaking.png" class="float-left">Firemaking</th>
-            <td class="tc-level">${userFiremaking[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userFiremaking[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userFiremaking[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-document.getElementById('crafting').innerHTML = `
-            <th><img src="img/skillIcons/crafting.png" class="float-left">Crafting</th>
-            <td class="tc-level">${userCrafting[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userCrafting[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userCrafting[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-smithing.innerHTML = `
-            <th><img src="img/skillIcons/smithing.png" class="float-left">Smithing</th>
-            <td class="tc-level">${userSmithing[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userSmithing[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userSmithing[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-mining.innerHTML = `
-            <th><img src="img/skillIcons/mining.png" class="float-left">Mining</th>
-            <td class="tc-level">${userMining[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userMining[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userMining[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-herblore.innerHTML = `
-            <th><img src="img/skillIcons/herblore.png" class="float-left">Herblore</th>
-            <td class="tc-level">${userHerblore[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userHerblore[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userHerblore[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-agility.innerHTML = `
-            <th><img src="img/skillIcons/agility.png" class="float-left">Agility</th>
-            <td class="tc-level">${userAgility[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userAgility[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userAgility[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-thieving.innerHTML = `
-            <th><img src="img/skillIcons/thieving.png" class="float-left">Thieving</th>
-            <td class="tc-level">${userThieving[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userThieving[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userThieving[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-slayer.innerHTML = `
-            <th><img src="img/skillIcons/slayer.png" class="float-left">Slayer</th>
-            <td class="tc-level">${userSlayer[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userSlayer[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userSlayer[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-farming.innerHTML = `
-            <th><img src="img/skillIcons/farming.png" class="float-left">Farming</th>
-            <td class="tc-level">${userFarming[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userFarming[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userFarming[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-runecrafting.innerHTML = `
-            <th><img src="img/skillIcons/runecrafting.png" class="float-left">Runecrafting</th>
-            <td class="tc-level">${userRunecrafting[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userRunecrafting[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userRunecrafting[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-hunter.innerHTML = `
-            <th><img src="img/skillIcons/hunter.png" class="float-left">Hunter</th>
-            <td class="tc-level">${userHunter[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userHunter[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userHunter[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-construction.innerHTML = `
-            <th><img src="img/skillIcons/construction.png" class="float-left">Construction</th>
-            <td class="tc-level">${userConstruction[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userConstruction[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userConstruction[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
-total.innerHTML = `
-            <th><img src="img/skillIcons/overall.png" class="float-left">Total</th>
-            <td class="tc-level">${decimalSeperation(userTotal[level]).replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-xp">${decimalSeperation(userTotal[xp]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-            <td class="tc-r">${decimalSeperation(userTotal[rank]).replace(/-1/, "<span class='text-danger'>Rank too low</span>")}</td>
-`;
+//Insert skills into table
+insertSkills();
 
-//Insert activity kc in table
+//Insert activity kc into table
 allClues.innerHTML = `
             <th><img src="img/skillIcons/attack.png" class="float-left">All Clue Scrolls</th>
             <td class="tc-level">${userAllClues[level].replace(/-1|^1$/, "<span class='text-danger'>Rank too low</span>")}</td>
